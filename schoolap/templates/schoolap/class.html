@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    button{
+        background-color: none;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        outline: none;
+        font-weight: 600;
+    }
+    button:hover{
+        letter-spacing: 1px;
+    }
+    button a{
+        text-decoration: none;
+        color: blue;
+    }
+</style>
+<body>
+    <h1>{{Obj.title}}</h1> <br>
+    <h2>{{Obj.table}}</h2>
+    <img src="{{Obj.images.url}}" alt="asasasasa"> <br>
+    <h3>{{Obj.teacher}}</h3> <br>
+    <button>
+        <a href="{% url 'Clas3' %}">
+            Test ishlash
+        </a>
+    </button>  
+</body>
+</html>

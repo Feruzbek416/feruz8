@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book_store</title>
+</head>
+<style>
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    a{
+        text-decoration: none;
+        color: red;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    a:hover{
+        letter-spacing: 2px;
+    }
+</style>
+<body>
+    {% for clas in Class %}
+    <img src="{{clas.images.url}}" alt=""> <br> 
+    <a href="{% url 'Clas2' clas.title %}">Read more</a> <br>
+    {% endfor %}
+</body>
+</html>
